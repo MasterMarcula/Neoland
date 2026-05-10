@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* Estilos "Mobile first" | Predeterminados */
+        div {
+            border: solid 1px;
+            padding: 5px;
+        }
+        section {
+            overflow: hidden;
+        }
+        .columna {
+            float: left;
+            width: 100%;
+        }
+        /* Tablets */
+        @media screen and (min-width: 768px) { /* aka 768 */
+            .columna {
+                width: 50%;
+            }
+         }
+        /* Ordenadores */
+        @media screen and (min-width: 1200px) {
+            .columna {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Mi página web</h1>
+    <section>
+        <div class="columna">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia neque ipsa ab fugiat voluptate magnam omnis.</p>
+        </div>
+        <div class="columna">
+            <p>Alias id praesentium quidem repellat maiores sint minima quisquam quas eveniet ex impedit itaque temporibus laboriosam unde distinctio dolore fugiat expedita assumenda adipisci, quibusdam, at dicta aliquam et!</p>
+        </div>
+        <div class="columna">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia neque ipsa ab fugiat voluptate magnam omnis.</p>
+        </div>
+        <div class="columna">
+            <p>Alias id praesentium quidem repellat maiores sint minima quisquam quas eveniet ex impedit itaque temporibus laboriosam unde distinctio dolore fugiat expedita assumenda adipisci, quibusdam, at dicta aliquam et!</p>
+        </div>
+    </section>
+    
+</body>
+</html>

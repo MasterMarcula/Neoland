@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: rgba(245, 245, 245);
+        font-family: "Outfit", sans-serif;
+        margin-top: -15px;
+      }
+
+      header {
+        background-color: rgb(76, 175, 80);
+        color: #ffffff;
+        text-align: center;
+        width: 100%;
+        height: 50px;
+      }
+
+      h1 {
+        font-family: "Allerta Stencil", sans-serif;
+        margin: 15px;
+        font-size: 24px;
+        font-weight: 500;
+        width: 100%;
+        color: rgb(255, 255, 255);
+      }
+
+      h1 img {
+        margin: 10px;
+        vertical-align: middle;
+      }
+
+      h2 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 22px;
+        margin: 10px;
+        color: rgb(51, 51, 51);
+      }
+
+      .guacamole {
+        width: 100%;
+        height: 100vh; /* 100% de la altura del viewport */
+        object-fit: cover; /* Clave: ajusta sin deformar */
+        object-position: center; /* Centra la imagen */
+        height: calc(100vh - 113px);
+        margin-bottom: -4px;
+      }
+
+      .pic-caption {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+        font-size: 18px;
+        color: #ffffff;
+        background-color: rgb(76, 175, 80);
+      }
+
+      .receta {
+        background-color: rgb(245, 245, 245);
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 5%;
+      }
+
+      .ingredients:hover,
+      .preparation:hover {
+        background-color: rgb(69, 160, 73);
+        color: rgb(255, 255, 255);
+        transition: all 0.8s ease;
+      }
+
+      .bordeinn2 {
+        box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        width: 45%;
+        height: 90%;
+      }
+
+      .bordeinn {
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        width: 45%;
+      }
+
+      hr {
+        border: none;
+        border: solid, 2px, rgba(75, 175, 80);
+        margin: 10px;
+      }
+
+      .ingredients,
+      .preparation {
+        background-color: rgb(245, 245, 245);
+        color: rgb(102, 102, 102);
+        border-radius: 10px;
+        padding: 20px;
+      }
+
+      ul,
+      ol {
+        margin-left: 10px;
+        padding-left: 10px;
+      }
+
+      footer {
+        background-color: rgba(51, 51, 51);
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .receta {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .bordeinn2,
+        .bordeinn {
+          width: 90%;
+          height: auto;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+    <title>Receta de Guacamole</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <img src="Aguacate.png" alt="icono de aguacate" width="32px" />
+        Receta de Guacamole
+        <img src="Aguacate.png" alt="icono de aguacate" width="32px" />
+      </h1>
+    </header>
+    <main>
+      <img class="guacamole" src="Guacamole.png" alt="Guacamole con nachos" />
+
+      <!-- Pie de foto para la imagen del guacamole -->
+      <p class="pic-caption">Guacamole casero con nachos.</p>
+
+      <div class="receta">
+        <div class="bordeinn">
+          <!-- Borde interno para separar ingredientes y preparación -->
+          <!-- Sección de ingredientes -->
+          <section class="ingredients">
+            <h2>Ingredientes</h2>
+            <hr />
+            <ul>
+              <li>2 aguacates</li>
+              <li>1 tomate picado</li>
+              <li>1/4 de cebolla morada picada</li>
+              <li>Cilantro al gusto</li>
+              <li>1/2 limón</li>
+            </ul>
+          </section>
+        </div>
+
+        <!-- Sección de la preparación -->
+        <div class="bordeinn2">
+          <section class="preparation">
+            <h2>Preparación</h2>
+            <hr />
+            <ol>
+              <li>Machacar los aguacates</li>
+              <li>Agregar tomate y cebolla</li>
+              <li>Limón al gusto</li>
+              <li>Mezclar y salar</li>
+            </ol>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy;2026 Recetas Web</p>
+    </footer>
+  </body>
+</html>
