@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h1 {
+            transition: all 1s 0.5s cubic-bezier(0, 1.03, 0.32, 1.28);
+            text-align: center;
+        }
+        h1:hover {
+            color:cornflowerblue;
+            transform:scale(1.1)
+        }
+        input {
+            border: none;
+            border-bottom: solid 1px black;
+        }
+        input:focus {
+            /* propiedad: outline, más que nada usado en formularios */
+            outline: solid 1px blue;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Mi página web</h1>
+    <p>Las transiciones permiten que el usuario al interactuar con los elementos, puedan verse transformaciones/animaciones, aplicables a cualquier elemento y también en formularios.</p>
+    <form>
+        <label for="mensaje">Mensaje</label>
+        <input type="text" name="mensaje" id="mensaje">
+    </form>
+</body>
+</html>

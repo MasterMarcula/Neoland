@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .first {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        /* Forma PRO 
+        Ventaja: sin necesidad de tocar el HTML y mantenerlo "más limpio"
+        */
+        article p:first-child {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        ul li:nth-child(2) {
+            color: red;
+        }
+
+        tr:nth-child(odd) { /* odd: impar / even: par */
+            background-color: lightblue;
+        }
+
+        /* Enlaces - LoVe-HAte */
+        a {color: aqua; cursor:grab;}
+        a:visited {color: black;}
+        a:hover { background-color: rgb(95, 76, 6); color: white;}
+        a:active {color: red;  background-color: white;}
+
+        h1:hover {
+            color: aqua;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Mi página web</h1>
+    <article>
+        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth
+            tatsoi <a href="https://www.google.com.ar">tomatillo</a>
+            melon azuki bean garlic.</p>
+
+        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean
+            collard
+            greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+
+        <ul>
+            <li>Harina</li>
+            <li class="destacado">Cacao</li>
+            <li>Azúcar</li>
+        </ul>
+
+        <table>
+            <tr>
+                <th>celda 1</th>
+                <th>celda 2</th>
+                <th>celda 3</th>
+            </tr>
+            <tr>
+                <td>celda 1</td>
+                <td>celda 2</td>
+                <td>celda 3</td>
+            </tr>
+            <tr>
+                <td>celda 1</td>
+                <td>celda 2</td>
+                <td>celda 3</td>
+            </tr>
+            <tr>
+                <th>celda 1</th>
+                <th>celda 2</th>
+                <th>celda 3</th>
+            </tr>
+            <tr>
+                <td>celda 1</td>
+                <td>celda 2</td>
+                <td>celda 3</td>
+            </tr>
+            <tr>
+                <td>celda 1</td>
+                <td>celda 2</td>
+                <td>celda 3</td>
+            </tr>
+            <tr>
+                <th>celda 1</th>
+                <th>celda 2</th>
+                <th>celda 3</th>
+            </tr>
+            <tr>
+                <td>celda 1</td>
+                <td>celda 2</td>
+                <td>celda 3</td>
+            </tr>
+            <tr>
+                <td>celda 1</td>
+                <td>celda 2</td>
+                <td>celda 3</td>
+            </tr>
+        </table>
+    </article>
+</body>
+
+</html>

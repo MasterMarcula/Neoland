@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* forma PRO */
+        /* Selecciona la primer línea, independientemente si luego se hace multilinea */
+        article p::first-line {
+            font-size: 120%;
+            font-weight: bold;
+        }
+
+        /* Ribbon */
+        h1 {
+            text-align: center;
+        }
+
+        h1::before {
+            content: '👉 ';
+        }
+
+        h1::after {
+            content: ' 👈';
+        }
+
+        img {
+            width: 100%;
+        }
+
+
+        /* Truco de overlay sobre imagen */
+        figure {
+            width: 100%;
+            margin: 0;
+        }
+
+        figure img {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+
+        .container-img {
+            position: relative;
+        }
+        figure::before {
+            background-image: linear-gradient(to top, rgba(1, 1, 1, 0.757) 10%, transparent 70%, transparent);
+            content: "";
+            height: 100%;
+            position: absolute;
+            width: 100%;
+        }
+
+        figcaption {
+            margin: 0;
+            font-weight: bold;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #ffffff;
+        }
+
+        .card.oferta::before {
+            content: "¡OFERTA!";
+            background-color: red;
+            font-size: 10px;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 3px;
+            top: 5px;
+            right: 5px;
+            font-weight: bold;
+            color: white;
+            position: absolute;
+        }
+        .card {
+            position: relative;
+            width: 50%;
+            border: solid 1px;
+        }
+        .card h2 {
+            font-size: 20px;
+        }
+        .card * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mi página web</h1>
+
+    <div class="container-img">
+        <figure>
+            <img src="https://picsum.photos/1000/500" alt="Imagen aleatoria">
+            <figcaption>Descripción</figcaption>
+        </figure>
+    </div>
+
+    <article>
+        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
+            melon azuki bean garlic.</p>
+
+        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean
+            collard
+            greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+
+            <div class="card oferta">
+                <div>
+                    <img src="https://picsum.photos/500/300" alt="">
+                </div>
+                <h2>Producto #1</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <strong>$ 100</strong>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="https://picsum.photos/500/300" alt="">
+                </div>
+                <h2>Producto #1</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <strong>$ 100</strong>
+            </div>
+    </article>
+</body>
+
+</html>
