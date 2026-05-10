@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Variable */
+        :root {
+            --color-principal: rgb(248, 174, 255);
+        }
+
+        /* Anidación */
+        /* ul li */
+        ul {
+            list-style: none;
+            li {
+                color: var(--color-principal);
+                &:hover {
+                    color: red;
+                }
+                &::before {
+                    content: "👉 "
+                }
+            }
+            
+        }
+
+        #productos {
+            h1 {
+                color: var(--color-principal)
+            }
+            h2 {
+                font-family: Arial, Helvetica, sans-serif;
+                color: var(--color-principal)
+            }
+            p {
+                font-family: 'Courier New', Courier, monospace;
+            }
+        }
+       
+    </style>
+</head>
+
+<body>
+    <section id="productos">
+        <h1>Mi página web</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, fugit veniam, amet error ipsam laborum
+            deleniti facilis nesciunt aperiam vitae aliquam voluptatum id. Ea reiciendis deserunt dolorem cum asperiores
+            molestiae?</p>
+        <h2>Subtitulo</h2>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+    </section>
+    <h2>Otro subtitulo</h2>
+</body>
+
+</html>

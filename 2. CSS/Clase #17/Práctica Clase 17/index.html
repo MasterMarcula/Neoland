@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <title>Navbar en BootStrap</title>
+  </head>
+  <body>
+    <!--    PRIMERO VA LA BARRA DE NAVEGACIÓN    -->
+
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><h1>SignalJS</h1></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Componentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Touch...</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ayuda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--    LUEGO EL CARRUSEL    -->
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://picsum.photos/1200/800/?random=1"
+            class="img-fluid"
+            alt=""
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://picsum.photos/1200/800/?random=2"
+            class="img-fluid"
+            alt=""
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://picsum.photos/1200/800/?random=3"
+            class="img-fluid"
+            alt=""
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://picsum.photos/1200/800/?random=4"
+            class="img-fluid"
+            alt=""
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--    AHORA VAMOS CON LAS TARJETAS    -->
+    <!--    Pego el ejercicio 3 de la clase 16    -->
+
+    <div class="container">
+ <!--    Primero la sección con 2 columnas, título2 y texto    -->
+
+      <h2>Experiencia Laboral</h2>
+      <section class="row" id="productos">
+        <div class="col-6">
+          <h3>Trabajo # 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            voluptate.
+          </p>
+        </div>
+        <div class="col-6">
+          <h3>Trabajo #2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            voluptate.
+          </p>
+        </div>
+      </section>
+
+      <!--    Ahora la sección de las tres columnas con una tarjeta dentro cada una  -->
+
+      <h2>Servicios</h2>
+      <section class="row" id="servicios">
+
+        <!-- Tarjeta # 1 -->
+
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/500/300/?random=5"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Producto 1</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#modal-dialog" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#producto1">Mostar Modal</a>
+            </div>
+          </div>
+        </div>
+
+        <!--  Modal de la Tarjeta 1  AÚN NO ME FUNCIONA -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Título del Modal</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- Tarjeta # 2 -->
+
+
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/500/300/?random=6"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary data-bs-toggle="modal" data-bs-target="#producto1">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal de la tarjeta # 2
+
+
+        <!-- Tarjeta # 3 -->
+
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/500/300/?random=7"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary data-bs-toggle="modal" data-bs-target="#exampleModal">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Modal de la tarjeta # 3 -->
+
+       </section>
+
+
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"> 
+        <div class="col-md-4 d-flex align-items-center"> 
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> 
+                <svg class="bi" width="30" height="24" aria-hidden="true">
+                    <use xlink:href="#bootstrap">
+
+                    </use>
+                </svg> 
+            </a> 
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Company, Inc</span> 
+        </div> 
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex"> 
+            <li class="ms-3">
+                <a class="text-body-secondary" href="#" aria-label="Instagram">
+                <svg class="bi" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="#instagram"></use>
+                </svg>
+            </a>
+        </li>
+                 <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook">
+                    <svg class="bi" width="24" height="24">
+                        <use xlink:href="#facebook"></use></svg></a></li> 
+                </ul>
+             </footer> 
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

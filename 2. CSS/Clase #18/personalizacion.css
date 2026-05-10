@@ -1,0 +1,49 @@
+:root {
+    --color-subtitulos: cornflowerblue;
+    --color-subtitulos-hover: rgb(45, 75, 131);
+    --tipografia-subtitulos: "Montserrat", sans-serif;
+    --tipografia-textos: "Ubuntu", sans-serif
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--tipografia-subtitulos);
+}
+p, li, label, input, button {
+    font-family: var(--tipografia-textos)
+}
+
+h2 {
+    color: var(--color-subtitulos);
+}
+
+.card {
+    border: none; /* Está 'pisando' (reemplazando) el borde gris */
+    img { /* es lo mismo que poner .card img */
+        border-radius: 10px;
+    }
+}
+
+.btn-gral {
+    background-color: var(--color-subtitulos);
+    color: white;
+}
+.btn-gral:hover {
+    background-color: var(--color-subtitulos-hover);
+    color: white;
+}
+footer {
+    background-color: var(--color-subtitulos);
+}
+.bg-menu {
+    background: linear-gradient(to top, transparent 5%, rgb(255,255,255) );
+    /* backdrop-filter: blur(4px) */
+}
+
+@media (max-width: 767px) {
+    #sobremi {
+        padding-top: 50px;
+    }
+    .bg-menu {
+        background-color: white
+    }
+}
