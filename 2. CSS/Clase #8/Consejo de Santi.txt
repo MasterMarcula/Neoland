@@ -1,0 +1,32 @@
+Puede pasar que cuando nos dedicamos al desarrollo web sintamos que nos falta UX/UI, y bueno a ellos les pasa viceversa ja!
+Es normal, pero bueno depende si tu idea es ser freelancer, puede ser buena opción para luego afinar el diseño
+
+Bueno como te decia
+
+<section>
+            <h3>Despertar</h3>
+            <p>Me despierto a las 7:00 am, me levanto y me preparo para el día.</p>
+        </section>
+        <section>
+            <h3>Trabajo</h3>
+            <p>Trabajo de 9:00 am a 5:00 pm, con una pausa para el almuerzo a las 12:00 pm.</p>
+        </section>
+        <section>
+            <h3>Tiempo libre</h3>
+            <p>Después del trabajo, me gusta <span>relajarme</span> viendo una película o leyendo un libro.</p>
+        </section>
+
+a
+
+<section>
+    <ol>
+            <li>Me despierto a las 7:00 am, me levanto y me preparo para el día.</li>
+            <li>Trabajo de 9:00 am a 5:00 pm, con una pausa para el almuerzo a las 12:00 pm.</li>
+            <li>Tiempo libre, después del trabajo, me gusta <span>relajarme</span> viendo una película o leyendo un libro.</h3>
+
+</ol>
+        </section>
+
+El vie, 20 mar 2026 a las 16:31, Marcos Oliveros (<mastermarcula@gmail.com>) escribió:
+Me permití algunas cositas.
+Tendré que estudiar UX/UI porque parece que no tengo los mejores gustos 🤪

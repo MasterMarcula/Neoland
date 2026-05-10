@@ -1,0 +1,37 @@
+p, 
+li {
+    color: darkslategrey;
+    font-family: Arial;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+}
+
+li {
+    color: blue;
+}
+
+ul {
+    list-style-type:circle;
+}
+
+ol {
+    list-style-type:upper-roman;
+}
+
+/* Párrafo que tiene como
+padre a section */
+main section p {
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    background-color:firebrick;
+    color: white;
+}
+
+span {
+    font-size: 40px;
+    font-weight: bold;
+}
