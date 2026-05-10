@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas</title>
+</head>
+<body>
+    <h1>Pruebas</h1>
+    <p>Esta es una prueba.</p>
+    <button onclick="tomardatos()">Ingresar datos</button>
+    <p id="resultado"></p>
+
+    <script>
+        function tomardatos(){
+            let nombre = prompt("Ingrese su nombre:");
+            document.getElementById("resultado").innerHTML = "Hola, " + nombre;
+            let edad = prompt("Ingrese su edad:");
+            if (edad >= 18) {
+                document.getElementById("resultado").innerHTML += "<br> Eres mayor de edad.";
+            } else {
+                document.getElementById("resultado").innerHTML += "<br> Eres menor de edad.";
+            }
+            alert(`Datos ingresados:  ${nombre}, ${edad}`);
+        }
+    </script>
+    
+</body>
+</html>
