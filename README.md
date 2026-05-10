@@ -1,24 +1,14 @@
 # Neoland's classes repository
 
-![image alt](./neoland-n-logotipo.png)
-
 ## Welcome! 👋
 
-Thanks for checking out this front-end coding challenge.
+Thanks for checking out the Neoland's website [https://www.neoland.online/login].
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+**You should be registered or/and be part of the Academy to Log In.**
 
-**To do this challenge, you need a good understanding of HTML and CSS.**
+## The clases.
 
-## The challenge
-
-Your challenge is to build out this bento grid and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to: 
-
-- View the optimal layout for the interface depending on their device's screen size
-
+Classes are available in folders named according to our progress at the BootCamp for Full Stack Web Developers. This repository was created by each pupil and let us to have a place to share the homeworks for every class in the format "Class-Nx" with the number of the class we had made.
+This is my try to have organized the GitHub more accurate and professional as posible. I hope you like it and let me know by clicking "Like" or "Stars" up to you.
 
 **Have fun building!** 🚀
