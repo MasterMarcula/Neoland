@@ -1,0 +1,32 @@
+// Copilot
+
+/*
+const impuestoIVA = monto => monto * 1.21;
+const impuestoReducido = monto => monto * 1.105;
+const sinImpuesto = monto => monto;
+
+
+function impuestoIVA(monto) {
+    return monto * 1.21; // Suma 21%
+}
+
+function impuestoReducido(monto) {
+    return monto * 1.105; // Suma 10.5%
+}
+
+function sinImpuesto(monto) {
+    return monto; // Devuelve el monto tal cual
+}
+
+function facturar(monto, cbCalculo) {
+    console.log("Calculando total de la factura...");
+
+    const resultado = cbCalculo(monto);
+
+    console.log("El total a pagar con impuestos es: $" + resultado);
+}
+
+facturar(1000, impuestoIVA);
+facturar(1000, impuestoReducido);
+facturar(1000, sinImpuesto); 
+*/

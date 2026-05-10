@@ -1,0 +1,7 @@
+
+const sumar = (nro1,nro2) => nro1 + nro2;
+const restar = (nro1,nro2) => nro1 - nro2;
+const multiplicar = (nro1,nro2) => nro1 * nro2;
+const dividir = (nro1,nro2) => nro1 / nro2;
+
+sumar(2,4)

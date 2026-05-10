@@ -1,0 +1,11 @@
+// Definimos el número de la tabla
+let tabla = 9;
+
+// Usamos un bucle for para iterar del 1 al 10
+for (let i = 1; i <= 10; i++) {
+    // Calculamos el resultado
+    let resultado = tabla * i;
+    
+    // Imprimimos la tabla en consola
+    console.log(`${tabla} x ${i} = ${resultado}\n`);
+}

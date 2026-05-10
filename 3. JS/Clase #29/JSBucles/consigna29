@@ -1,0 +1,13 @@
+// Llamada 1
+console.log( saludarDeclarada() ); 
+
+// Llamada 2
+console.log( saludarExpresada() ); 
+
+function saludarDeclarada() {
+    return "Soy una función declarada y vuelo al inicio.";
+}
+
+const saludarExpresada = function() {
+    return "Soy una función expresada y respeto el orden.";
+};

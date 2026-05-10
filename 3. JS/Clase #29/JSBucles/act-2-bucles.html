@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles #2</title>
+</head>
+<body>
+    <header>
+        <h1>La Clave Secreta</h1>
+        <p>El programa debe seguir pidiendo la clave hasta que el usuario ingrese la correcta.</p>
+    </header>
+    <main>
+        <script>
+            const CLAVE_SECRETA = "JavaScript2026";
+            let claveIngresada = prompt("Ingrese la clave secreta:");
+
+            while (claveIngresada !== CLAVE_SECRETA) {
+                alert("Clave incorrecta. Intente nuevamente.");
+                claveIngresada = prompt("Ingrese la clave secreta:");
+            }
+
+            alert("¡Bienvenido al club! Acceso total concedido.");
+        </script>
+    </main>
+    
+</body>
+</html>
