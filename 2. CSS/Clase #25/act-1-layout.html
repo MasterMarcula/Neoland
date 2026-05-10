@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - CSS Grid</title>
+    <!-- Crear un layout  como este: 
+     
+    HEADER (logo + navegación)
+    MAIN (artículos)   ASIDE
+    FEATURED (destacado)
+    FOOTER
+    
+    Requisitos
+el header debe tener:
+logo a la izquierda
+navegación a la derecha
+el contenido principal debe estar separado del sidebar
+la sección “destacada” debe ocupar todo el ancho
+el layout debe verse ordenado y claro
+dentro del contenido principal, mostrar varios artículos en forma de grilla
+    -->
+<style>
+    * {
+        margin: 0  ;
+        padding: 0 ;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: azure;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #ece1fa;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    nav ul a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transform: scale(1.2rem);
+    }
+    nav ul a:hover {
+        color: #007BFF;
+        font-size: 1.2rem;
+        transition: ease-in-out 0.3s;
+    }
+    .content {
+        display: grid;
+        height: calc(100vh-);
+        grid-template-columns: 1fr 300px;
+        gap: 20px;
+        padding: 20px;
+    }
+    .featured {
+        grid-column: 1 / -1;
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .article-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    .article-grid article {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    .sidebar {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #ece1fa;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="Logo75x75w.png" alt="Logo" width="120px"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="featured">
+            <h2>Destacado</h2>
+            <p>Contenido destacado aquí.</p>
+        </section>
+        <div class="content">
+            <section class="articles">
+                <h2>Artículos</h2>
+                <div class="article-grid">
+                    <article>
+                        <h3>Artículo 1</h3>
+                        <p>Contenido del artículo 1.</p>
+                    </article>
+                    <article>
+                        <h3>Artículo 2</h3>
+                        <p>Contenido del artículo 2.</p>
+                    </article>
+                    <article>
+                        <h3>Artículo 3</h3>
+                        <p>Contenido del artículo 3.</p>
+                    </article>
+                </div>
+            </section>
+            <aside class="sidebar">
+                <h2>Sidebar</h2>
+                <p>Contenido del sidebar aquí.</p>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

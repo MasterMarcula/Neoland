@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            Crear una galería de imágenes considerando la siguiente estructura:
+        
+            [ imagen ] [ imagen ] [ imagen ] [ imagen ] [ imagen ] 
+            [ imagen ] [ imagen ] [ imagen ] [ imagen ] [ imagen ] 
+
+        Requisitos
+        - imágenes en una sola fila
+        - que pasen a la siguiente línea si no entran en la fila
+        - separación entre imágenes
+        
+        Nota
+        - Puede que no les quede perfecto, por lo cual, ¿qué css extra usarían para mejorar su visualización? ¿usarían media queries además?
+
+        */
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- crear el html -->
+     <header>
+        <h1>Galería de Imágenes</h1>
+     </header>
+    <div class="galeria">
+        <img src="https://picsum.photos/1600/1000?random=1" alt="Imagen 1" width="150px">
+        <img src="https://picsum.photos/1600/1000?random=2" alt="Imagen 2" width="150px">
+        <img src="https://picsum.photos/1600/1000?random=3" alt="Imagen 3" width="150px">
+        <img src="https://picsum.photos/1600/1000?random=4" alt="Imagen 4" width="150px">
+        <img src="https://picsum.photos/1600/1000?random=5" alt="Imagen 5" width="150px">
+        <img src="https://picsum.photos/1600/1000?random=6" alt="Imagen 6" width="150px">
+        <img src="https://picsum.photos/1600/1000?random=7" alt="Imagen 7" width="150px">
+        <img src="https://picsum.photos/1600/1000?random=8" alt="Imagen 8" width="150px">
+        <img src="https://picsum.photos/1600/1000?random=9" alt="Imagen 9" width="150px">
+        <img src="https://picsum.photos/1600/1000?random=10" alt="Imagen 10" width="150px">
+    </div>
+</body>
+</html>

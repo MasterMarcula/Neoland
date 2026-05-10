@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3 - CSS Grid</title>
+    <!-- Construir una grilla de un producto con jerarquía visual.
+     
+    Crear una card elaborada como la siguiente:
+    [ Sidebar ] [ Header Header ]
+    [ Sidebar ] [ Card   Card   ]
+    [ Sidebar ] [ Card   Card   ]
+
+    Requisitos:
+    el sidebar debe ocupar toda la altura, y debe ser o un fondo de imagen o una imagen (recordar que
+     css se usaba para "recortar" pero que mantenga la proporción la imagen)
+el header debe ocupar todo el ancho superior, en donde estará el título del producto
+el layout debe ser consistente
+Las 4 celdas de CARD, es para algunos párrafos, podrian haber listas
+  -->
+    <style>
+      * {
+        margin: 0; 
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 8px;
+        padding: 20px;
+        background: linear-gradient(to bottom, #158,#240,#210);
+      }
+
+      .div1 {
+        grid-row: span 3 / span 3;
+        padding: 20px;
+        border: solid 1px #ccc;
+      }
+
+      div img {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+      }
+
+      .div2 {
+        grid-column: span 2 / span 2;
+        padding: 20px;
+        border: solid 1px #ccc;
+      }
+
+      .div3 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+      }
+
+      .div4 {
+        grid-column-start: 2;
+        grid-row-start: 3;
+      }
+
+      .div5 {
+        grid-column-start: 3;
+        grid-row-start: 2;
+      }
+
+      .div6 {
+        grid-column-start: 3;
+        grid-row-start: 3;
+      }
+
+      .div1 {
+        background-image: url("https://picsum.photos/400/600?random=1");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .div1 h1,
+      .div1 p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.25);
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .div2 {
+        background-color: #d4fcef;
+        border-radius: 1rem;
+      }
+
+      .card {
+        width: 190px;
+        height: 254px;
+        border-radius: 20px;
+        background: #f5f5f5;
+        position: relative;
+        padding: 1.8rem;
+        border: 2px solid #c3c6ce;
+        transition: 0.5s ease-out;
+        overflow: visible;
+      }
+
+      .card-details {
+        color: black;
+        height: 100%;
+        gap: 0.5em;
+        display: grid;
+        place-content: center;
+      }
+
+      .card-button {
+        transform: translate(-50%, 125%);
+        width: 30%;
+        border-radius: 1rem;
+        border: none;
+        background-color: #008bf8;
+        color: #fff;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        opacity: 0;
+        transition: 0.3s ease-out;
+        z-index: 10;
+      }
+
+      .text-body {
+        color: rgb(134, 134, 134);
+      }
+
+      /*Text*/
+      .text-title {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      /*Hover*/
+      .card:hover {
+        border-color: #008bf8;
+        box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+      }
+
+      .card:hover .card-button {
+        transform: translate(-50%, 50%);
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="div1">
+        <h1>Acompáñanos</h1>
+        <p>Únete a nuestra comunidad y descubre nuevas oportunidades.</p>
+      </div>
+      <div class="div2">
+        <h2>Producto Destacado</h2>
+        <p>
+          Explora las características y beneficios de nuestro producto estrella.
+          El viaje para dos personas todo incluido.
+        </p>
+        <img src="https://picsum.photos/400/150?random=1" alt="" />
+      </div>
+      <div class="div3">
+        <div class="card">
+          <div class="card-details">
+            <img src="https://picsum.photos/200/150?random=1" alt="" />
+            <p class="text-title">Transporte</p>
+            <p class="text-body">Avión, tren, coche</p>
+          </div>
+          <button class="card-button" onclick="alert('Más información sobre Transporte')">Más info</button>
+        </div>
+      </div>
+      <div class="div4">
+        <div class="card">
+          <div class="card-details">
+            <img src="https://picsum.photos/200/150?random=2" alt="" />
+            <p class="text-title">Alojamiento</p>
+            <p class="text-body">Habitación doble con vista al mar</p>
+          </div>
+          <button class="card-button" onclick="alert('Más información sobre Alojamiento')">Más info</button>
+        </div>
+      </div>
+      <div class="div5">
+        <div class="card">
+          <div class="card-details">
+            <img src="https://picsum.photos/200/150?random=3" alt="" />
+            <p class="text-title">Comida</p>
+            <p class="text-body">Menú diario con opciones vegetarianas</p>
+          </div>
+          <button class="card-button" onclick="alert('Más información sobre Comida')">Más info</button>
+        </div>
+      </div>
+      <div class="div6">
+        <div class="card">
+          <div class="card-details">
+            <img src="https://picsum.photos/200/150?random=4" alt="" />
+            <p class="text-title">Actividades</p>
+            <p class="text-body">Excursiones y actividades al aire libre</p>
+          </div>
+          <button class="card-button" onclick="alert('Más información sobre Actividades')">Más info</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

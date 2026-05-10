@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Header</title>
+    <style>
+        /*
+        Crear una sección tipo “hero” como las páginas modernas:
+
+        -----------------------------------------
+                    TÍTULO PRINCIPAL
+                Texto descriptivo corto
+
+                        [ BOTÓN ]
+        -----------------------------------------
+
+        Requisitos
+            - ocupar toda la pantalla (alto completo)
+            - contenido centrado vertical y horizontalmente
+            - texto alineado al centro
+            - botón debajo del texto
+
+        Extra
+            - fondo con color o imagen
+            - hover en botón
+            - agregar spacing entre elementos
+        */
+
+         :root {
+            --primary-color: #9bd3f8;
+            --text-color: #101010;
+         }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: var(--text-color);
+            background-image: url(https://picsum.photos/1600/1000?random=1);
+            background-size: cover;
+            background-position: center;   
+            backdrop-filter: blur(5px); /* El efecto principal */
+            -webkit-backdrop-filter: blur(5px);
+        }
+
+        header {
+            height: 100vh; /* altura completa de la pantalla */
+            display: flex; /* usar flexbox para centrar contenido */
+            flex-direction: column; /* organizar elementos en columna */
+            justify-content: center; /* centrar verticalmente */
+            align-items: center; /* centrar horizontalmente */
+            text-align: center; /* alinear texto al centro */
+            color: var(--text-color);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0.5em 0;
+            background-color: rgba(255, 255, 255, 0.4);
+            padding: 0.5em 1em;
+            border-radius: 20px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin: 0.5em 0;
+            background-color: rgba(255, 255, 255, 0.4);
+            padding: 0.5em 1em;
+            border-radius: 15px;
+            text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1em;
+            padding: 0.75em 1.5em;
+            background-color: var(--primary-color);
+            color: #2e2e30;
+            text-decoration: none;
+            font-size: 1.25rem;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background-color: rgba(90, 125, 238, 0.432);
+            transform: translateY(-3px);
+            color: azure;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- crear el titulo, párrafo y enlace/botón -->
+         <h1>Título Principal</h1>
+         <h2>Texto descriptivo corto</h2>
+         <a href="#" class="btn">Descubrir Más...</a>
+    </header>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navbar</title>
+    <style>
+        /*
+        Crear una barra de navegación como esta:
+        [ LOGO ]     			   [ Inicio | Recetas | Contacto ]       			 [ Login ]
+        
+
+        =Requisitos+
+        - todo en una misma fila
+        - logo a la izquierda
+        - menú centrado
+        - botón login a la derecha
+        - que quede bien alineado verticalmente
+
+        */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #f8f8f8;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+        }
+
+.menu a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .logo  img {
+            width: 150px;
+        }
+
+        .login {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="logo.png" alt="logo"></div>
+
+        <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#recetas">Recetas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <button class="login">Login</button>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor {
+            max-width: 1200px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: 
+                " enc enc enc"
+                " princ princ publi"
+                " princ princ ."
+                " pie pie pie"
+            ;
+        }
+        header {
+            grid-area: enc;
+            background-color: yellow;
+            height: 50px;
+        }
+        main {
+            grid-area: princ;
+            background-color: bisque;
+        }
+        aside {
+            grid-area: publi;
+            background-color: aquamarine;
+        }
+        footer {
+            grid-area: pie;
+            background-color: coral;
+            height: 80px;
+        }
+        ul {
+            list-style:none;
+            display: flex;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="contenedor">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Productos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                seccion 1
+            </section>
+            <section>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In dolor a doloremque laborum voluptas quas nulla minus, eveniet aliquid quo veniam magnam veritatis! Id laborum perferendis doloribus illo ipsa veniam, nostrum corporis reprehenderit inventore tempore, quod voluptatum! Ratione ex tempore, suscipit accusantium sed consequatur? Ipsa quos dicta blanditiis dolorum suscipit numquam nobis reprehenderit ipsum est ab nam, accusamus unde cumque sint esse doloribus eveniet. Autem dolore error adipisci eum totam eligendi suscipit, quibusdam porro labore ea enim, velit est, delectus ex. Laudantium autem dignissimos labore iste aut illo. Tempore eaque iure hic sequi quae odio dolorum fugiat esse repellat accusamus?
+            </section>
+        </main>
+        <aside>
+            <img src="https://picsum.photos/500/300" alt="">
+        </aside>
+        <footer>
+            pie
+        </footer>
+    </div>
+
+</body>
+</html>

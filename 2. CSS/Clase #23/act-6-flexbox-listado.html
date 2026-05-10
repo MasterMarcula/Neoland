@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Asadito - Menú</title>
+    <style>
+        /* Crear listado, por ej, de comidas: 
+
+
+        Paella                          € 20
+        ------------------------------------ <-- esto seria un borde? pensalo
+        Pollo al ají                    € 15
+        ------------------------------------
+        Pasta carbonara                 € 18
+        ------------------------------------
+        Hamburguesa completa            € 12
+        ------------------------------------
+        Ensalada César                  € 10
+        ------------------------------------
+
+
+        Requisitos
+        - nombre a la izquierda
+        - precio alineado a la derecha
+        - cada ítem separado por una línea
+        - buen espaciado entre filas
+        - alineación perfecta aunque cambie el texto
+
+        Extras opcionales
+        - cambiar color al hacer hover en el ítem
+        - destacar el precio (color o peso)
+        - línea punteada o más sutil
+        
+
+        */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3dabd;
+            padding: 20px;
+            height: 95vh;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            background-image: url('Asado_argentino_1600x.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 25px;
+            height: 350px;
+        }
+        h1 {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-size: 5rem;
+            padding-top: 120px;
+        }
+        .menu {
+            width: 300px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+            border-bottom: 2px dashed #333;
+            transition: transform 1.5s ease;
+        }
+        .item:hover {
+            transform: scale(1.05);
+            font-size: 1.2rem;
+        }
+        .nombre {
+            font-weight: bold;
+        }
+        .precio {
+            color: #007BFF;
+            font-weight: bold;
+        }   
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Menú</h1>
+    </header>
+    <main>
+        <div class="menu">
+            <div class="item">
+                <span class="nombre">Paella</span>
+                <span class="precio">€ 20</span>
+            </div>
+            <div class="item">
+                <span class="nombre">Pollo al ají</span>
+                <span class="precio">€ 15</span>
+            </div>
+            <div class="item">
+                <span class="nombre">Pasta carbonara</span>
+                <span class="precio">€ 18</span>
+            </div>
+            <div class="item">
+                <span class="nombre">Hamburguesa completa</span>
+                <span class="precio">€ 12</span>
+            </div>
+            <div class="item">
+                <span class="nombre">Ensalada César</span>
+                <span class="precio">€ 10</span>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

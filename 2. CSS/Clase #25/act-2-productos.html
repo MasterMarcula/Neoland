@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - CSS Grid</title>
+    <!-- Construir una grilla de productos con jerarquía visual.
+     
+    [        destacado       ]
+    [ card ] [ card ] [ card ]
+    [ card ] [ card ] [ card ]
+
+    Requisitos:
+    al menos 7 productos
+uno debe destacarse visualmente
+el producto destacado debe ocupar más espacio
+los demás deben mantenerse alineados
+el conjunto debe verse equilibrado
+Cada CARD debe tener imagen, titulo y enlace de forma vertical
+  -->
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+.destacado {
+    grid-column: span 3;
+    background-color: #f0c040;
+    padding: 20px;
+    text-align: center;
+}
+.card {    
+    background-color: #e0e0e0;
+    padding: 15px;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    height: auto;
+} 
+h1 {
+    text-align: center;
+    margin-bottom: 30px; 
+}
+
+</style>
+</head>
+<body>
+    <h1>Ejercicio 2 - CSS Grid</h1>
+    <div class="grid-container">
+        <div class="destacado">
+            <img src="https://picsum.photos/400/200" alt="Producto Destacado">
+            <h2>Producto Destacado</h2>
+            <a href="#">Ver Producto</a>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/200/150?random=1" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <a href="#">Ver Producto</a>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/200/150?random=2" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <a href="#">Ver Producto</a>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/200/150?random=3" alt="Producto 3">
+            <h3>Producto 3</h3>
+            <a href="#">Ver Producto</a>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/200/150?random=4" alt="Producto 4">
+            <h3>Producto 4</h3>
+            <a href="#">Ver Producto</a>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/200/150?random=5" alt="Producto 5">
+            <h3>Producto 5</h3>
+            <a href="#">Ver Producto</a>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/200/150?random=6" alt="Producto 6">
+            <h3>Producto 6</h3>
+            <a href="#">Ver Producto</a>
+        </div>
+    </div>  
+  </div>  
+
+</body>
+</html>
