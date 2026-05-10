@@ -1,0 +1,71 @@
+:root {
+  --color-principal: rgb(13, 13, 13); 
+  --color-secundario: rgb(245, 240, 232); 
+  --color-fondo: rgb(232, 223, 200);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+header {
+  background-color: var(--color-principal);
+  color: white;
+  strong {
+    font-weight: normal;
+  }
+}
+header .col a {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2,
+#estadisticas .row strong {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2rem;
+}
+p { font-size: 1.6rem;}
+
+#contacto input,
+#contacto textarea {
+font-size: 1.6rem;
+}
+
+#estadisticas {
+    
+    background-color: var(--color-fondo);
+}
+
+#estadisticas .row p {
+    font-size: 1.4rem;
+}
+
+
+main {
+    background-color: var(--color-secundario);
+}
+
+.bi {
+    font-size: 32px;
+}
+
+footer {
+    color: white;
+    background-color: var(--color-principal);
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+  .w-lg-60 {
+    width: 60%;
+    flex: 0 0 auto;
+  }
+}

@@ -1,0 +1,5 @@
+FLujo de trabajo:
+1. Identificar etiquetas de la versión, ejemplo, de escritorio
+2. Crear el HTML
+3. Aplicar las clases de bootstrap
+4. Aplicar CSS personalizado

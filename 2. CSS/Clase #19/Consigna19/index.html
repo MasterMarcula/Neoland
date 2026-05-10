@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CONEXIÓN CON BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Consigna Clase # 19</title>
+</head>
+
+<body>
+    <!-- <div class="container-fluid"> -->
+        <!-- H  E  R  O -->
+        <div class="conatiner">
+            <div class="container-fluid bg-dark">
+                <div class="p-3 text-uppercase">
+                    <span class="text-white">Mi nombre</span>
+                    <span class="text-warning">| diseño · desarrollo · branding</span>
+                </div>
+
+                <div class="p-3 display-5 fw-bold">
+                    <span class="text-white">Transformo ideas en </span>
+                    <span class="text-warning">experiencias</span>
+                    <span class="text-white">digitales</span>
+                </div>
+
+                <div class="p-2">
+                    <span class="text-white">Trabajo con emprendedores y empresas para diseñar y desarrollar productos digitales la conch... funcionales y atractivos. Mi olbetivo es ayudarte a comunicar mejor tu propuesta y mejorar la experiencia de tus usuarios.</span>
+                </div>
+                <a href="#" class="btn btn-warning mx-2 mb-5 mt-3" data-bs-toggle="modal" data-bs-target="#initProject">Iniciar proyecto</a>
+                <button type="button" class="btn btn-outline-light  mx-2 mb-5 mt-3" onclick="alert('Lo del portafolio, vienes a casa y lo conversamos')">Ver portfolio</button>
+            </div>
+        <!-- </div> -->
+
+            <!--  T A B L A   D E L   C E N T R O    -->
+            <div class="container-fluid text-center celdas pt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col">
+                            <p class="display-3 fw-bold">+80</p>
+                        </div>
+                        <div class="col">
+                            <p class="display-3 fw-bold">6</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Proyectos</p>
+                        </div>
+                        <div class="col">
+                            <p>Años</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                   <div class="row">
+                        <div class="col">
+                            <p class="display-3 fw-bold">98%</p>
+                        </div>
+                        <div class="col">
+                            <p class="display-3 fw-bold">14</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Clientes</p>
+                        </div>
+                        <div class="col">
+                            <p>Países</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="mb-4 display-5 fw-bold">
+
+        <!--  T A R J E T A S  -->
+
+    <form action="https://formspree.io/f/mbdzpzba" method="post" class="needs-validation" novalidate>
+        <div class="container-fluid text-center tarjetas pt-5">
+            <div class="titulos">
+                <p class="h3 fw-bold">Servicios</p>
+                <p class="fs-5 fw-normal">Servicios que potencian tu proyecto</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 px-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="bi bi-brush icono-amarillo h3"></i>
+                            <h5 class="card-title">Diseño UX/UI</h5>
+                            <p class="fs-6 fw-normal">Diseño interfaces centradas en el usuario, con foco en la usabilidad y la experiencia. Desde wireframes hasta prototipos interactivos listos para validad ideas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 px-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="bi bi-code-slash icono-amarillo h3"></i>
+                            <h5 class="card-title">Desarrollo Web</h5>
+                            <p class="fs-6 fw-normal">Construyo sitios web modernos, rápidos y adaptados a distintos dispositivos. Utilizo buenas prácticas para lograr productos escalables y mantenibles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 px-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="bi bi-stars icono-amarillo h3"></i>
+                            <h5 class="card-title">Branding</h5>
+                            <p class="fs-6 fw-normal">Desarrollo identidades visuales coherentes que transmiten los valores de tu marca y la diferencian en el mercado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+                <!--  F O R M U L A R I O   D E   C O N T A C T O  -->
+                <div class="container-fluid tarjetas">
+                    <div class="row g-3 align-items-center">
+                        <p class="fs-2 mt-5">Contacto</p>
+                        <div class="col-md-6 col-sm-12">
+                            <input type="text" id="nombre" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <input type="text" id="nombre" class="form-control" placeholder="E-mail">
+                        </div>
+                        <div class="form-floating">
+                            <!-- <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea> -->
+                            <label for="mensaje"><p class="fs-6 fw-normal">Mensaje</p></label>
+                            <textarea name="comentarios" id="comentarios" class="form-control" required></textarea>
+                        </div>
+                        <div class="col-1">
+                            <input type="submit" value="Enviar" class="btn btn-warning">
+                        </div>
+                    </div>
+                </div>
+
+                          <!-- M O D A L -->
+                <div class="modal fade" id="initProject" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-3" id="exampleModalLabel">Iniciando Proyecto...</h1>
+                                <button type="button" class="btn-close h4" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="lead">Sea Ud. bienvenido a su proyecto</p>
+                                    </div>
+                                    <div class="col">
+                                        <img src="https://picsum.photos/700/500" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+              <!-- F O O T E R  -->
+            <div class="container-fluid bg-dark text-center p-2">
+                <p class="text-light"><p class="text-light">&copy; 2026 Marcos Oliveros. Todos los derechos reservados.</p></p>
+            </div>
+    </div> <!-- Contenedor principal, aquí está todo metido -->
+
+    <!-- CONEXIÓN CON BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</html>

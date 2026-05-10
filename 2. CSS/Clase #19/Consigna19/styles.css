@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --color-principal: rgb(13, 13, 13);
+  --color-secundario: rgb(245, 240, 232);
+  --color-fondo1: rgb(233, 223, 200);
+  --color-fondo2: rgb(245, 240, 232);
+  /*--color-fondo3: rgb(232, 223, 200); es igual a bg-white */
+}
+
+.icono-amarillo {
+  color: rgb(255, 208, 0); /* O un código hexadecimal como #FFFF00 */
+}
+
+.celdas {
+  background-color: var(--color-fondo1);
+}
+.tarjetas {
+  background-color: var(--color-secundario);
+}

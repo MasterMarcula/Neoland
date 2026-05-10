@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .hero-text {
+            top: 30%;
+            left: 10%;
+            color: white;
+        }
+        .fondo-overlay {
+            background: #F5F0E8;
+            background: linear-gradient(275deg,rgba(245, 240, 232, 0.2) 0%, rgba(0, 0, 0, 0.75) 100%);
+            /* left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0; */
+            inset: 0; /* nos permite abreviar el uso de left, right, bottom, top */
+        }
+        @media (min-width:768px) {
+            .w-md-50 {
+                width: 50%;
+            }
+        }
+        @media (min-width:992px) {
+            .w-lg-25 {
+                width: 25%;
+            }
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <!-- carousel -->
+        <div id="productosDestacados" class="carousel slide">
+            <div class="carousel-indicators z-3">
+                <button type="button" data-bs-target="#productosDestacados" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#productosDestacados" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#productosDestacados" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#productosDestacados" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active position-relative">
+                    <div class="position-absolute hero-text z-3 w-md-50 w-lg-25">
+                        <h2>Producto</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, exercitationem?</p>
+                        <a href="" class="btn btn-warning">Ver más</a>
+                    </div>
+                    <div class="fondo-overlay position-absolute z-2"></div>
+                    <img src="https://picsum.photos/1600/500?random=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <div class="position-absolute hero-text z-3 w-md-50 w-lg-25">
+                        <h2>Producto</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, exercitationem?</p>
+                        <a href="" class="btn btn-warning">Ver más</a>
+                    </div>
+                    <div class="fondo-overlay position-absolute z-2"></div>
+                    <img src="https://picsum.photos/1600/500?random=2" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <div class="position-absolute hero-text z-3 w-md-50 w-lg-25">
+                        <h2>Producto</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, exercitationem?</p>
+                        <a href="" class="btn btn-warning">Ver más</a>
+                    </div>
+                    <div class="fondo-overlay position-absolute z-2"></div>
+                    <img src="https://picsum.photos/1600/500?random=3" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <div class="position-absolute hero-text z-3 w-md-50 w-lg-25">
+                        <h2>Producto</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, exercitationem?</p>
+                        <a href="" class="btn btn-warning">Ver más</a>
+                    </div>
+                    <div class="fondo-overlay position-absolute z-2"></div>
+                    <img src="https://picsum.photos/1600/500?random=4" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev z-3" type="button" data-bs-target="#productosDestacados"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next z-3" type="button" data-bs-target="#productosDestacados"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- /carousel -->
+    </header>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
