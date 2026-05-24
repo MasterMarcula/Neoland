@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario de Inventario</h1>
+    </header>  
+    <main>
+        <form id="inventory-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required pattern="[A-Za-z\s]+" title="Solo se permiten letras y espacios">
+
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" required pattern="\d+(\.\d{1,2})?" title="Ingrese un número válido con hasta dos decimales">
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" required></textarea>
+
+            <label for="valoracion">Valoración:</label>
+            <input type="number" id="valoracion" name="valoracion" min="1" max="5" step="1" required>
+
+            <label for="stock">Stock:</label>
+            <input type="number" id="stock" name="stock" value="0" required>
+            
+            <div class="checkbox-group">
+                <label for="en-oferta">En oferta:</label>
+                <input type="checkbox" id="en-oferta" name="en-oferta">
+            </div>
+
+            <label for="descuento">Descuento (%):</label>
+            <input type="number" id="descuento" name="descuento" min="0" max="100" value="0" required>
+
+            <label for="financiacion">Financiación (meses):</label>
+            <select id="financiacion" name="financiacion">
+                <option value="1">1 Cuota</option>
+                <option value="3">3 meses</option>
+                <option value="6">6 meses</option>
+                <option value="9">9 meses</option>
+                <option value="12">12 meses</option>
+            </select>
+
+            <button type="submit">Agregar al Inventario</button>
+
+        </form>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2026. Inventario de Productos</p>
+    </footer>
+    
+</body>
+</html>
